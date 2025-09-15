@@ -1,0 +1,78 @@
+############################
+# Python
+############################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+.env
+.env.*
+
+# Packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Tests / Coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+.hypothesis/
+coverage.xml
+nosetests.xml
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.DS_Store
+
+############################
+# Project data and large artifacts
+############################
+# Ignore heavy data directories and media archives
+data/
+Alfieri Photos/
+Gaby-Irvine job talk/
+
+# Large scientific data formats
+*.nc
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.db
+*.sqlite
+
+# Archives and logs
+*.zip
+*.tar
+*.tar.gz
+*.log
+
+# Backup / temp files
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Specific known large file
+data_stream-oper_stepType-instant.nc
