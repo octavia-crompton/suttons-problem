@@ -7,5 +7,3 @@ Refactor and modeling workspace for advection/stability experiments.
 - Notebooks exploring advection and stability scenarios
 - Large data and photos ignored via `.gitignore`
 
-## Next
-- Split code into a package (src/sutton) and update notebooks to import from it.
