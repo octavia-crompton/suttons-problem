@@ -76,3 +76,13 @@ Gaby-Irvine job talk/
 
 # Specific known large file
 data_stream-oper_stepType-instant.nc
+
+# Google Drive stubs (not real files, can't be committed)
+*.gsheet
+*.gdoc
+*.gslides
+*.gform
+
+# ERA5 download caches
+notebooks/era5*/
+data/era5*/

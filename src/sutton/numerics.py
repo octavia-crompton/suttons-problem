@@ -58,3 +58,18 @@ def our_central_difference(s, dz):
     dsdz[0] = (s[1] - s[0]) / dz
     dsdz[m - 1] = (s[m - 1] - s[m - 2]) / dz
     return dsdz
+
+
+def no_central_difference(s, z):
+    """
+    Central differences; forward/backward at edges.
+    """
+    m = len(z)
+    dz = np.ones(m)
+    ds = np.ones(m)
+    dz[:-1] = np.log(z[1:] / z[:-1])
+    ds[:-1] = (s[1:] - s[:-1])    
+    ds_dz = ds/dz
+    ds_dz[-1] = ds_dz[-2]
+    
+    return ds_dz

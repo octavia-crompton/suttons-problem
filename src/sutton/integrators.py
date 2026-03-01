@@ -1,8 +1,9 @@
 import numpy as np
-from .numerics import thomas, our_central_difference
+from .numerics import thomas, our_central_difference, no_central_difference
 
 
-def integrate_H2O_implicit(n, m, dx, dz, A, B, C, Qup, Qs, Qa):
+
+def integrate_H2O_implicit(n, m, dx, dz, A, B, C, Qup, Qs, Qa, z):
     AA1 = -A * B
     AA2 = -C * B
     AA3 = 1 / dx
@@ -23,18 +24,14 @@ def integrate_H2O_implicit(n, m, dx, dz, A, B, C, Qup, Qs, Qa):
     co[m - 1] = Qa
 
     Q1 = thomas(lod, dia, upd, co)
-    dQdz = our_central_difference(Q1, dz)
+    dQdz = no_central_difference(Q1, z)
 
-    Fq = np.zeros_like(Q1)
-    Fq[1:] = -0.5 * (A[1:] + A[:-1]) * (0 * dQdz[:-1] + dQdz[1:]) * 0.5
-    Fq[1] = Fq[2]
-    Fq[0] = Fq[1]
+    Fq = - A/z * dQdz
+
     return Q1, Fq
 
+def integrate_T_implicit(n, m, dx, dz, A, B, C, Tup, Ts, Ta, z):
 
-essential = integrate_H2O_implicit
-
-def integrate_T_implicit(n, m, dx, dz, A, B, C, Tup, Ts, Ta):
     AA1 = -A * B
     AA2 = -C * B
     AA3 = 1 / dx
@@ -55,10 +52,8 @@ def integrate_T_implicit(n, m, dx, dz, A, B, C, Tup, Ts, Ta):
     co[-1] = Ta
 
     T1 = thomas(lod, dia, upd, co)
-    dTdz = our_central_difference(T1, dz)
+    dTdz = no_central_difference(T1, z)
 
-    FT = np.zeros_like(T1)
-    FT[1:] = -0.5 * (A[1:] + A[:-1]) * (0 * dTdz[:-1] + dTdz[1:]) * 0.5
-    FT[1] = FT[2]
-    FT[0] = FT[1]
+    FT = - A/z * dTdz
+
     return T1, FT

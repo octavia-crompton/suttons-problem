@@ -42,7 +42,7 @@ class Params:
         z = np.arange(zmin + self.dz, zmax + self.dz, self.dz)
         return {"x": x, "z": z, "nx": len(x), "nz": len(z), "xmax": xmax, "zmin": zmin, "zmax": zmax}
 
-    def _ustars(self):
+    def _ustars_from_4m(self):
         Ubar_4 = 3.76
         z_ref = 4.0
         ustar_f = self.k * Ubar_4 / np.log(z_ref / self.zom_f)
@@ -57,7 +57,7 @@ class Params:
     def to_dict(self):
         d = asdict(self)
         d.update(self._grid())
-        d.update(self._ustars())
+        d.update(self._ustars_from_4m())
         d.update(self._block_sizes())
         Tsc_K = self.T_sc + 273.15
         Tsf_K = self.T_sf + 273.15
