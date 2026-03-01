@@ -86,3 +86,6 @@ data_stream-oper_stepType-instant.nc
 # ERA5 download caches
 notebooks/era5*/
 data/era5*/
+
+# Office temp files
+~$*
