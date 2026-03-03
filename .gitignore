@@ -96,3 +96,4 @@ notebooks/archive/fallow\ landcover\ -\ 2026-03-02.ipynb
 
 # Internal development notes (not for GitHub)
 README_internal.md
+.github/workflows/sync-overleaf.yml

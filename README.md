@@ -2,7 +2,7 @@
 
 A Python implementation of the 2-D boundary-layer advection model originally described by Sutton (1953) and applied by Rao et al. (1974) and Baldocchi & Rao (1995). The model solves for the redistribution of heat and water vapour downwind of an abrupt surface discontinuity — for example, where an irrigated crop field borders dry fallow land.
 
-![Temperature profiles: model vs. Rao (1974) and Rider observations](fig_profiles_T.png)
+![Temperature profiles: model vs. Rao (1974) and Rider observations](figures/fig_profiles_T.png)
 
 *Modelled temperature profiles (blue lines) compared with Rao's (1974) analytical solution (orange) and Rider's field measurements (green) at four downwind distances.*
 
