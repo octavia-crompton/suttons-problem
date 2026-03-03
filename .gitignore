@@ -89,3 +89,7 @@ data/era5*/
 
 # Office temp files
 ~$*
+
+# Large notebooks (>100 MB)
+notebooks/fallow\ landcover.ipynb
+notebooks/archive/fallow\ landcover\ -\ 2026-03-02.ipynb
