@@ -93,3 +93,6 @@ data/era5*/
 # Large notebooks (>100 MB)
 notebooks/fallow\ landcover.ipynb
 notebooks/archive/fallow\ landcover\ -\ 2026-03-02.ipynb
+
+# Internal development notes (not for GitHub)
+README_internal.md
