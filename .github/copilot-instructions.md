@@ -130,7 +130,7 @@ There is no formal figure registry in this project yet. Current practice:
 ## 5. Reference Implementations
 
 - **FORTRAN:** `CLOSET.FOR` — original reference; parameters sourced from Rao et al.
-- **MATLAB:** `matlab_versions/Matlab/` — working multi-variable version; `matlab_versions/sutton_only_wv/` — water-vapour-only version; `matlab_versions/sutton_v0/` — earliest version.
+- **MATLAB:** `matlab_versions/Matlab/` — working multi-variable version; `matlab_versions/sutton_only_wv/` — water-vapour-only version.
 - When debugging numerical results, cross-check against MATLAB outputs or the Rao (1974) figures in `data/Rao_1974_Figure*.csv`.
 
 ---
