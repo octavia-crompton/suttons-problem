@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: working_diff.aux
+The style file: abbrvnat.bst
+Database file #1: sample.bib
+Repeated entry---line 321 of file sample.bib
+ : @article{el1965effects
+ :                       ,
+I'm skipping whatever remains of this entry
+Database file #2: references.bib
+Repeated entry---line 16342 of file references.bib
+ : @article{essery_boundarylayer_2006
+ :                                   ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "loubet2018fides"
+Warning--I didn't find a database entry for "brutsaert1982"
+Warning--I didn't find a database entry for "dyer1965"
+Warning--I didn't find a database entry for "davenport1967"
+Warning--I didn't find a database entry for "lang1974"
+Warning--I didn't find a database entry for "brakke1978"
+Warning--I didn't find a database entry for "harbeck1962"
+Warning--I didn't find a database entry for "brutsaertYu1968"
+Warning--I didn't find a database entry for "elliott1958"
+Warning--I didn't find a database entry for "panofskyTownsend1964"
+Warning--I didn't find a database entry for "plateHidy1967"
+Warning--I didn't find a database entry for "lettauZabransky1968"
+Warning--I didn't find a database entry for "itierPerrier1976"
+Warning--I didn't find a database entry for "penman1948"
+Warning--I didn't find a database entry for "slatyerMcIlroy1961"
+Warning--I didn't find a database entry for "priestley1959"
+Warning--I didn't find a database entry for "priestleyTaylor1972"
+Warning--I didn't find a database entry for "bouchet1963"
+Warning--I didn't find a database entry for "morton1976"
+Warning--I didn't find a database entry for "brutsaertStricker1979"
+Warning--there's a number but no volume in mcshane2017review
+Warning--empty year in melton_openet_nodate
+Warning--empty year in melton_openet_nodate
+Warning--empty journal in rosenberg_extreme_1978
+You've used 70 entries,
+            2773 wiz_defined-function locations,
+            1071 strings with 22922 characters,
+and the built_in function-call counts, 41812 in all, are:
+= -- 3638
+> -- 3214
+< -- 36
++ -- 1091
+- -- 1011
+* -- 3977
+:= -- 6633
+add.period$ -- 266
+call.type$ -- 70
+change.case$ -- 542
+chr.to.int$ -- 60
+cite$ -- 144
+duplicate$ -- 1466
+empty$ -- 2788
+format.name$ -- 1115
+if$ -- 8463
+int.to.chr$ -- 11
+int.to.str$ -- 1
+missing$ -- 72
+newline$ -- 414
+num.names$ -- 280
+pop$ -- 935
+preamble$ -- 1
+purify$ -- 474
+quote$ -- 0
+skip$ -- 1205
+stack$ -- 0
+substring$ -- 1651
+swap$ -- 132
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 760
+warning$ -- 4
+while$ -- 326
+width$ -- 0
+write$ -- 1026
+(There were 2 error messages)
