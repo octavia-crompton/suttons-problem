@@ -39,7 +39,7 @@ Modeling/measurement approaches to “missing transport” — **Mauder et al. (
 
 **Stoughton et al. 2002**
 
-- What's this study about? Researchers spent two weeks in summer 1996 measuring how much water evaporates from a pecan orchard in the New Mexico desert near Las Cruces. They wanted to understand how the dry surrounding desert affects water loss from the irrigated trees, and how air moves through the orchard.
+- Researchers spent two weeks in summer 1996 measuring how much water evaporates from a pecan orchard in the New Mexico desert near Las Cruces. They wanted to understand how the dry surrounding desert affects water loss from the irrigated trees, and how air moves through the orchard.
 
 - Why does it matter? Irrigated farms in deserts use enormous amounts of water. Accurately predicting how much water an orchard actually consumes is critical for water management in arid regions. The problem is that standard calculation methods weren't designed for orchards sitting in a desert surrounded by hot, dry air.
 
@@ -71,6 +71,4 @@ Key findings:
 
 Bottom line: To improve weather and climate simulations of the Central Valley, the most urgent need is better soil moisture data — particularly from irrigated farmland — to fix the starting conditions models use. The models themselves also need updated physics to realistically represent irrigation. Without these improvements, the models are systematically too hot, too dry, and produce atmospheric layers that are unrealistically deep.
 
-
-Sutton’s solution → problem
 
