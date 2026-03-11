@@ -101,3 +101,12 @@ README_internal.md
 # Overleaf clones (synced separately)
 overleaf_sutton/overleaf/
 overleaf_fallowing/overleaf/
+
+# LaTeX auxiliary and diff files
+overleaf_sutton/draft/*.aux
+overleaf_sutton/draft/*.bbl
+overleaf_sutton/draft/*.blg
+overleaf_sutton/draft/*.log
+overleaf_sutton/draft/*.out
+overleaf_sutton/draft/working_diff.tex
+overleaf_sutton/draft/working_diff.pdf
