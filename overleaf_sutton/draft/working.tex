@@ -42,154 +42,82 @@
     
     
     
-    \section{Introduction}
-    
-    % Spatial heterogeneity can modify mass, energy, momentum fluxes \citep{philip1959theory}.
-    % Horizontal advection cal alter local rate of ET and surface energy balance. Assumption of constant stomatal resistance predicted ET would be high at the wet/dry interface \cite{lang_influence_1974}
-    
+\section{Introduction}
+
+% --- Opening: heterogeneity → advection → examples ---
+
 The surface energy balance and the associated exchange of water vapor between the land surface and the atmosphere are routinely modelled under the assumption of horizontal homogeneity, yet most land surfaces are spatially heterogeneous.
-Wherever surface properties change abruptly --- at the boundary between an irrigated field and fallow land, at the shoreline of a lake, or at the margin of a snow-covered catchment --- horizontal gradients in temperature and humidity drive the lateral transport of heat and moisture.
+Wherever surface properties change abruptly---at the boundary between an irrigated field and fallow land, at the shoreline of a lake, or at the margin of a snow-covered catchment---horizontal gradients in temperature and humidity drive the lateral transport of heat and moisture.
 This process, referred to here as local advection, perturbs near-surface profiles of temperature and specific humidity and, in turn, modifies the turbulent fluxes of sensible and latent heat at the surface.
 Its effects have been documented in a wide range of environments, including elevated evapotranspiration (ET) in irrigated fields bordered by dry land \citep{rao1974local}, enhanced evaporation from lakes and reservoirs \citep{higgins2013measured}, and accelerated snowmelt at exposed patch margins \citep{shook1997snowmelt, essery2006boundary}.
-    
-     In some cases, sensible heat may be drawn from the overlying air to support evaporation, so that the latent heat flux may exceed the local net radiation (evaporative enhancement) \citep{yang2013new, kool_within-field_2018}.  
-     This occurs because warm, dry air moving over a cooler, well-watered surface provides an additional source of thermal energy that supplements the energy provided by net radiation \cite{spronken2000advection}.
-    
-    % How surface controls (e.g., finite resistance / surface relative humidity) shape the partitioning rather than assuming a perfectly saturated surface everywhere.
-    While early analytical work often assumed a perfectly saturated surface \cite{lang1974influence, rao1974local}, more recent research has focused on how surface controls, such as stomatal resistance and surface relative humidity, shape energy partitioning within a soil-plant-atmosphere continuum \cite{baldocchi1995intra}. 
-     % Surface controls -- such as finite surface resistance and surface relative humidity -- then regulate the energy partitioning, rather than assuming a perfectly saturated surface everywhere. 
-     
-    Horizontal transport of heat and moisture across sharp surface contrasts can therefore modify near-surface gradients and, in turn, the surface turbulent fluxes.
-    
-    
-    %  energy balance is sensitive to advection,
-    Over heterogeneous surfaces, advection transports heat and water vapor, perturbing the one-dimensional surface energy balance assumed by most ET models.
-    
-    The impact of water vapor advection is most evident near abrupt changes in land conditions, such as the edges of irrigated fields or water bodies \cite{rao1974local, higgins2013measured}.
-    
-    
-    \textbf{Advection and water resources}
-    
-    
-    Quantifying water losses due to advection is important for water-resources planning, particularly for irrigation management in heterogeneous landscapes. Advective enhancement can be substantial, especially near leading edges where hot, dry air from adjacent fallow or barren areas increases evaporative demand over irrigated patches. Lysimeter studies show that advection can raise ET by roughly 30–10\% above what local net radiation alone could support \cite{rijks1971water, rosenberg1978extreme, spronken2000advection}. 
-    
-    Consistent with this, advective effects cannot be neglected over mosaic irrigated–fallow land surfaces.
-    This is particularly consequential during early growth stages, when seedlings are most vulnerable to high temperatures and elevated vapor pressure deficits.
-    
-    
-    Quantifying water losses due to advection is needed to effectively manage water resources.
-    Advection is relevant to water resources planning, particularly for irrigation management. 
-    Advective enhancement is significant, especially leading edge effects.  For example, lysimeter studies have shown that advection can increase ET on the order of 30–100\%  higher than what local net radiation alone could support \cite{rijks1971water, rosenberg1978extreme, spronken2000advection}.
-     Advective effects cannot be neglected over such variable land surfaces as mosaic irrigated/fallow lands.
-    Quantifying advective effects is important for irrigation management.
-    During early growth stages, seedlings are particularly susceptible to heat and high vapor pressure deficits.
-    
-    % TODO: Move to historical: 
-    \citet{rosenberg1978extreme} documented record-breaking evapotranspiration rates in an irrigated alfalfa field during a severe drought in the midwestern United States.  On clear mid-summer days, net radiation  could support at most $\sim$7 mm /d of ET, and sensible heat advection increased evapotranspiration to 10–14 mm/d.
-    Allen et al (2011) observation in an irrigated agricultural area surrounded by desert, where lysimeter measurements recorded actual evapotranspiration  rates that significantly exceeded the energy supplied by local net radiation. In some instances, the ratio of ET/Rn  was greater than 2 meaning the actual water loss was over 100\% higher than what local solar radiation alone could support. 
-    \textit{dry air from the surrounding desert provides the additional thermal energy required to drive these extreme evaporation rates. This study demonstrates that assuming net radiation is the only source of evaporative energy can lead to significant underestimation of ET in arid and semi-arid regions.}
-    
-    %  Oke (1979) observed suburban lawns where daily evaporation from mini-lysimeters exceeded net radiation.
-    
-    
-    \textbf{Land fallowing}
-    Trend towards increasing land fallowing  \cite{melton2014mapping}.
-    % See Pancorbo
-    During California drought from 2011 - 2015, for example, area of land fallowed increased from x to y?. 
-    
-    Previous studies examined some aspects of land use changes, driving factors, and impacts on groundwater during 2007–2016 in Central Valley. During this period, increases in fallow land area and reductions in irrigated land were reported [8,16,17]. 
-    % 8 Medellín-Azuara, J.; MacEwan, D.; Howitt, R.E.; Sumner, D.A.; Lund, J.R.; Scheer, J.; Gailey, R.; Hart, Q.; Alexander, N.D.; Arnold, B.; et al. Economic Analysis of the 2016. California Drought on Agriculture; Center for Watershed Sciences: Davis, CA, USA, 2016.
-    % Cooley, H.; Donnelly, K.; Phurisamban, R.; Subramanian, M. \textit{Impacts of California’s ongoing Drought: Agriculture}; Pacific Institute: Oakland, CA, USA, 2015; p. 24.
-    % [17] Medellin-Azuara, J.; MacEwan, D.; Howitt, R.E.; Koruakos, G.; Dogrul, E.C.; Brush, C.F.; Kadir, T.N.; Harter, T.; Melton, F.; Lund, J.R. Hydro-economic analysis of groundwater pumping for irrigated agriculture in California’s Central Valley, USA. \textit{Hydrogeol. J.} 2015, \textit{23}, 1205–1216.
-    
-    
-    Tools to address such questions as - how much water is saved by fallowing land in irrigated agricultural lands? 
-    Are savings to some extent offset by advection? 
-    How sensitive are things to spatial pattern?
-    
-    \paragraph{Advection and remote sensing}
-    \medskip 
-    
-    \textit{Quantifying advection is also important for improving the accuracy of remote-sensing ET models. Although remote sensing advances now enable routine ET mapping, most pixel-based approaches treat each pixel as vertically one-dimensional and therefore neglect horizontal transport of heat and moisture \cite{liou2014evapotranspiration, mcshane2017review}. This limitation is especially problematic in advective settings, such as agricultural landscapes with patchworks of irrigated and fallow fields \cite{derardja2024advancements}. A small number of recent studies incorporate advection explicitly in remote-sensing ET algorithms or use high-resolution thermal imagery to diagnose advective fluxes, including modifications to SEB and SEBAL \cite{liu2016regional, mkhwanazi2015sebal, wang2024advection}; we discuss these in more detail in Section~\ref{sec:discussion}.
-    }
-    Quantifying advection also needed to improve accuracy of ET models.
-    % Connection to remote sensing, why topic is timely
-    Remote sensing advances have enabled mapping ET; however, most models treat pixels as vertically one-dimensional, neglecting transport of heat and moisture \cite{liou2014evapotranspiration, mcshane2017review}.
-    As a result, advective environments -- such as agricultural lands with a patchwork of fallow and irrigated fields  -- are a challenge for ET models \cite{derardja2024advancements}.
-    
-    Remote-sensing ET models typically do not account for advection. Exceptions are several recent studies that incorporate advection into remote-sensing ET models  \cite{mkhwanazi2015sebal, liu2016regional},  including modifications to the SEB  \cite{liu2016regional}  and  SEBAL \cite{mkhwanazi2015sebal}; discussed in more detail in Section \ref{sec:discussion}.
-    
-    Other studies have used high-resolution thermal imagery to diagnose advective fluxes \cite{wang2024advection}.
-    
-    
-    \paragraph{Upscale in heterogeneous landscapes}
-    
-    Advection poses an ongoing challenge in connecting high-resolution land surface data with the coarse-resolution variables used in atmospheric models \cite{kustas_effects_2003}.
-    Predicting how the whole differs from ths sum of its parts involves understanding how patches `talk' to one another.
-    
-    
-     The magnitude of advective enhancement of latent heat transfer depends on the background conditions, patch configuration, and stomatal feedbacks to the advected humidity-deficit \cite{raupach_averaging_1982}(Raupach, 1991; Klaassen, 1992; Kroon and de Bruin, 1993). 
-    
-    
-    % Hardner: The differences in surface energetics between snow-covered and snow-free areas lead to a heterogeneous distribution of surface temperature and near-surface water vapour. These horizontal gradients drive a lateral exchange of heat (sensible heat advection) and water vapour (latent heat advection when considering the induced condensation or sublimation) over the leading edge of a snow patch. 
-    
-    \paragraph{Advances in remote sensing}
-    
-    This topic is particularly timely, as advances in space-based satellites, aircraft, drones, and infrared cameras have the potential to observe and analyze advective processes across various scales and conditions \cite{volk2024assessing, fisher2020ecostress, derardja2024advancements}.   
-    \textit{Look for studies advancing measurement of advective effects, diagnosis using thermal imagery, drones, model/RS combination? See Kustas.}
-    Studies using RS/aerial imagery to diagnose turbulent heat flux and advective effects...
-    
-    % ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer) on NASA’s Terra provides $\sim$90 m thermal infrared imagery (with 15–30 m VNIR/SWIR) that can resolve field-scale land-surface temperature gradients useful for diagnosing advective edge effects.
-    % IKONOS
-    
-    Remote sensing technologies thus remain under-leveraged in quantifying advection and its impacts on water resources  \cite{liu2016regional}. 
-    To leverage ongoing advances in remote sensing, modeling frameworks must accommodate complex, spatially variable boundary conditions derived from remote sensing,
-    to describe advection impacts at the large scales.
-    % We want the capabilities to handle complex boundary conditions measured from remote sensing.
-    
-    \paragraph{Revisiting Sutton's problem}
-    
-    Here, we revisit Sutton's solution \cite{sutton1934wind} 
-    -- describing enhanced evaporation downwind of a dry/wet interface -- 
-    and outline an approach to bridge remote sensing. 
-    
-    
-    
-    Application explored is specific to mosaic fallow and cultivated areas, where highly advective conditions, experiments have demonstrated impacts. 
-    
-    
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.8\linewidth]{figures/Figure7.1.png}
-        \caption{Sutton's problem. Definition sketch of two-dimensional internal boundary layer problem. \textit{Placeholder}.
-        Sutton's problem describes the idealized system of  air advection across a sharp transition in surface moisture,  from an upwind dry, water-limited surface to a downwind wet or irrigated surface. Upwind, strong sensible heating produces a warm, dry boundary layer.  Where the surface switches abruptly to a wet, energy-limited regime.  As the  dry air passes over this irrigated patch, an internal boundary layer develops and grows with distance from the transition, within which temperature and humidity adjust toward values compatible with the wet surface fluxes, while the overlying flow retains the properties of the upwind dry boundary layer. }
-        \label{fig:7.1}
-    \end{figure}
-    
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.8t\linewidth]{figures/Figure7.3.png}
-        \caption{Internal boundary layer of specific humidity in a dynamically uniform boundary layer.}
-        \label{fig:placeholder}
-    \end{figure}
-    
-    
-    The study first provides a brief overview of the first principles involved in the problem, including radiation balance, energy balance,  mean momentum balance, and mean mass balance of water vapor.
-    
-    We then examine the second principles, including the assumption of a gradient diffusion representation for turbulent fluxes.
-    We discuss the limitation of this representation, 
-    and show that it still yields plausible results when analyzing contrasts, compared to more complex formulations \cite{rao1974local}.
-    
-    Following a review of prior work / brief history. 
-    
-    Three sections to the study:
-    (1) comparison to experimental results (Rider, Baldocchi) – showing good agreement.
-    (2) estimate of fallowing effects on ET, comparing both to continuous cultivation,
-    (3) scenario exploration.
-    
-    This work advances on previous work by explicitly considering spatial configuration and wind. 
-    
-    \section{Review of prior work}
+
+In some cases, sensible heat may be drawn from the overlying air to support evaporation, so that the latent heat flux exceeds the local net radiation---a phenomenon termed evaporative enhancement \citep{yang2013new, kool_within-field_2018}.
+This occurs because warm, dry air moving over a cooler, well-watered surface provides an additional source of thermal energy that supplements net radiation \cite{spronken2000advection}.
+While early analytical work often assumed a perfectly saturated surface \cite{lang1974influence, rao1974local}, more recent research has focused on how surface controls, such as stomatal resistance and surface relative humidity, shape energy partitioning within a soil--plant--atmosphere continuum \cite{baldocchi1995intra}.
+
+% --- Why it matters: water resources ---
+
+\paragraph{Advection and water resources.}
+Quantifying advective enhancement is important for water-resources planning, particularly irrigation management in heterogeneous landscapes.
+Near leading edges, where hot, dry air from adjacent fallow or barren areas increases evaporative demand over irrigated patches, lysimeter studies show that advection can raise ET on the order of 30--100\% above what local net radiation alone could support \cite{rijks1971water, rosenberg1978extreme, spronken2000advection}.
+These effects cannot be neglected over mosaic irrigated--fallow land surfaces and are particularly consequential during early growth stages, when seedlings are most vulnerable to high temperatures and elevated vapor pressure deficits.
+
+% --- Why it matters: remote sensing ---
+
+\paragraph{Advection and remote sensing.}
+Quantifying advection is also important for improving the accuracy of remote-sensing ET models.
+Although remote sensing advances now enable routine ET mapping, most pixel-based approaches treat each pixel as vertically one-dimensional and therefore neglect horizontal transport of heat and moisture \cite{liou2014evapotranspiration, mcshane2017review}.
+This limitation is especially problematic in advective settings, such as agricultural landscapes with patchworks of irrigated and fallow fields \cite{derardja2024advancements}.
+A small number of recent studies incorporate advection explicitly into remote-sensing ET algorithms, including modifications to SEB \cite{liu2016regional} and SEBAL \cite{mkhwanazi2015sebal}, or use high-resolution thermal imagery to diagnose advective fluxes \cite{wang2024advection}; we discuss these in Section~\ref{sec:discussion}.
+More broadly, advection poses an ongoing challenge for connecting high-resolution land-surface data with the coarse-resolution variables used in atmospheric models \cite{kustas_effects_2003}, because the magnitude of advective enhancement depends on background conditions, patch configuration, and stomatal feedbacks to the advected humidity deficit \cite{raupach_averaging_1982}.
+
+% --- Land fallowing as a specific motivation ---
+
+\paragraph{Land fallowing as a motivating application.}
+In water-limited regions, land fallowing is increasingly used to reduce agricultural water consumption \cite{melton2014mapping}.
+% TODO: fill in California numbers.
+During the 2011--2015 California drought, for example, fallowed area in the Central Valley increased substantially as irrigated acreage was curtailed to conserve groundwater and surface-water supplies.
+This trend raises a set of quantitative questions that current models are not well equipped to answer: How much water is actually saved by fallowing?  Are those savings partially offset by advective enhancement of ET on the remaining irrigated fields?  How sensitive is the net water balance to the spatial pattern of fallowed and cultivated parcels?
+
+% --- Timeliness: RS advances ---
+
+\paragraph{Timeliness.}
+This topic is particularly timely, as advances in space-based satellites, aircraft, drones, and infrared cameras now provide the observational capability to resolve advective processes across scales---from individual field edges to regional mosaics \cite{volk2024assessing, fisher2020ecostress, derardja2024advancements}.
+Yet remote sensing technologies remain under-leveraged in quantifying advection and its impacts on water resources \cite{liu2016regional}.
+To exploit these new data streams, modeling frameworks must accommodate spatially variable boundary conditions derived from remote sensing.
+
+% --- This study ---
+
+\paragraph{This study.}
+Here, we revisit Sutton's analytical solution for enhanced evaporation downwind of a dry--wet interface \cite{sutton1934wind} and develop an approach that bridges this classical framework with remote-sensing observations.
+The application explored is specific to mosaic fallow and cultivated landscapes, where highly advective conditions have been repeatedly documented.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/Figure7.1.png}
+    \caption{Sutton's problem.  Definition sketch of the two-dimensional internal boundary layer that develops when air advects across a sharp transition in surface moisture, from an upwind dry, water-limited surface to a downwind wet or irrigated surface.  Upwind, strong sensible heating produces a warm, dry boundary layer; at the transition the surface switches abruptly to a wet, energy-limited regime.  An internal boundary layer grows with distance from the transition, within which temperature and humidity adjust toward values set by the wet-surface fluxes, while the overlying flow retains the properties of the upwind dry boundary layer.  \textit{Placeholder.}}
+    \label{fig:7.1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/Figure7.3.png}
+    \caption{Internal boundary layer of specific humidity in a dynamically uniform boundary layer.}
+    \label{fig:placeholder}
+\end{figure}
+
+The paper is organized as follows.
+Section~\ref{sec:review} reviews prior analytical, numerical, and observational work on advection.
+Section~\ref{sec:methods} describes the governing equations, the first-order eddy-diffusivity closure, and the boundary-condition formulations used here; we show that this representation, although simpler than higher-order closures \cite{rao1974local}, yields plausible results for the contrasts of interest.
+The results are presented in three parts:
+(1)~comparison to the experimental observations of \citet{rider1963horizontal} and \citet{baldocchi_intra-field_1995}, demonstrating good agreement;
+(2)~estimation of fallowing effects on ET relative to continuous cultivation; and
+(3)~scenario exploration under warming atmospheric conditions.
+Section~\ref{sec:discussion} discusses implications for water-resources management and remote-sensing ET models, and Section~\ref{sec:conclusion} summarizes the findings.
+This work advances on previous studies by explicitly considering spatial configuration and wind direction in estimating advective enhancement.
+
+\section{Review of prior work}
+\label{sec:review}
     
     \subsection*{Early work} 
 
@@ -201,7 +129,7 @@ Its effects have been documented in a wide range of environments, including elev
 \citet{sutton1934wind} developed an analytical solution to the humidity transport equation for the case of a sudden change in surface conditions from a dry to wet surface.
 % Brutsaert: The solution describes evaporation from a uniformly-moist surface of limited size, such as a lake or an irrigated field, whose temperature and roughness are uniform and the same as the surrounding presumably drier land surface. Under these simple conditions, the water vapor is a passive admixture that does not affect the dynamics of the motion or the stability. Hence, the problem can be considered non-dynamic and non-energetic and only the passive transfer of water vapor is of concern. This means that the wind profile fI = fI(z), v = w = 0, remains unchanged as the air travels past the humidity discontinuity
     
-    \paragraph{Philips (1959)} 
+    \paragraph{Philip (1959)} 
     % 2) Philip (1959):
     % General “local advection” from horizontal heterogeneity: heat/moisture/momentum
     %  Two key mathematical moves
@@ -215,7 +143,7 @@ Its effects have been documented in a wide range of environments, including elev
     % Nonzero upwind moisture flux: introduce normalized scalar (e.g., $\chi$) / include $E_a$ for field relevance
     Whereas Sutton’s original solution was restricted to smooth flow, Philip’s approach accommodates aerodynamically rough    surfaces (which are more common in natural and agricultural lands). 
     %  Inclusion of Background Evapotranspiration
-    Lastly, Sutton’s solution neglected evaporation from the dry land upwind of the wet area, and Philips approach  included an upwind evapotranspiration rate, which made the model more broadly applicable.
+    Lastly, Sutton’s solution neglected evaporation from the dry land upwind of the wet area, and Philip's approach  included an upwind evapotranspiration rate, which made the model more broadly applicable.
     % Scaling outputs: clearer fetch dependence / internal boundary layer (vapor blanket) thickness; connection to mass-transfer formulas (via Brutsaert synthesis)
     % Better Scaling
      The updated solutions provided a clearer way to calculate the thickness of the `vapor blanket' (the internal boundary layer) as a function of the fetch (downwind distance). By using a power-law approximation for wind speed and eddy diffusivity, Philip provided a closed form that could be directly compared to observational results \cite{brutsaert2013evaporation}.
@@ -256,7 +184,8 @@ Its effects have been documented in a wide range of environments, including elev
     In the 1950s - 1970s, studies broadened in scope to consider controls other than micrometeorology, in particular, the role of stomates in controlling water losses  \cite{el1965effects, millar1964effect}.
     % agricultural studies documented advection impacts on ET using lysimeters to measure evapotranspiration and study the effects of advection on evaporation rates. 
     During this period, a series of agricultural studies documented significant advection impacts on ET utilized precision weighing lysimeters, particularly in arid and semi-arid environments \cite{rosenberg_extreme_1978}. 
-    % TODO: check Rosenberg et al., 1983.
+    \citet{rosenberg1978extreme} documented record-breaking evapotranspiration rates in an irrigated alfalfa field during a severe drought in the midwestern United States: on clear mid-summer days, net radiation could support at most $\sim$7~mm/d of ET, yet sensible heat advection increased evapotranspiration to 10--14~mm/d.
+    Allen et al.\ (2011) observed similar magnitudes in an irrigated agricultural area surrounded by desert, where lysimeter measurements recorded actual evapotranspiration rates that significantly exceeded the energy supplied by local net radiation, with ratios of ET/$R_n$ exceeding 2 in some instances --- demonstrating that dry air from the surrounding desert provides the additional thermal energy required to drive these extreme evaporation rates.
         
     % 1.  shift in the literature
     % Early “atmospheric demand → ET increases” assumption
@@ -275,7 +204,7 @@ Its effects have been documented in a wide range of environments, including elev
     
      Sutton’s (1934) approach, and other early models, had significant  limitations. Specifically, they (i) generally neglected the effects of roughness change at surface transitions, (ii) ignored thermal stratification (buoyancy effects), treating moisture as a passive scalar, and (iii) relied on assumed power-law forms for wind speed and eddy diffusivity that did not adapt to non-equilibrium conditions.
      
-     Th 1970s saw the application of higher-order closure models to address the advection problem, which addressed these limitations. 
+     The 1970s saw the application of higher-order closure models to address the advection problem, which addressed these limitations. 
      
      % Rao developed a second order closure scheme, which  addressed these limitations in Sutton's approach  including the effects of thermal stratification and surface roughness.
     
@@ -399,6 +328,8 @@ Its effects have been documented in a wide range of environments, including elev
     Horizontal advection contributes to surface-energy-balance non-closure: the full control-volume budget includes storage and advective flux-divergence terms, so a residual in $R_n - G - (H+LE)$ can reflect transport in addition to measurement errors. 
     
     
+
+This study revisits Sutton's classical framework for advective enhancement of evapotranspiration across surface discontinuities and develops an approach to connect it with remote sensing observations. Section 2 reviews the evolution of advection theory, from Sutton's (1934) analytical solution and Philip's (1959) generalizations through higher-order closure models, footprint analyses, and recent large-eddy simulation studies, and summarizes how remote sensing ET models have addressed — or neglected — horizontal transport. Section 3 presents the governing equations for coupled heat and moisture advection under first-order eddy-diffusivity closure, describes the numerical solution procedure, and formulates three sets of boundary conditions: one for comparison against field experiments, one driven by satellite-derived land surface temperature, and one for scenario exploration under changing atmospheric conditions. Section 4 evaluates the model against the experimental observations of Rider et al. (1963) and Baldocchi and Rao (1995), then applies it to estimate how land fallowing patterns and warming temperatures affect advective enhancement of ET in irrigated–fallow mosaics. Section 5 discusses implications for water resources management, the potential to integrate the advection framework into operational remote sensing ET products such as OpenET, and the limitations and extensions of the approach. By explicitly accounting for spatial configuration and wind direction — factors absent from current pixel-based ET models — this work offers a pathway toward physics-based representation of advection in remote sensing evapotranspiration estimation.
     
     
     \section{Methods}
@@ -1222,10 +1153,10 @@ i.e., $\overline{w'T'}$ is determined from the log-law temperature profile presc
      %  separated ET into local fluxes driven by 1D energy balance and an ‘exotic’ component driven by horizontal advection.
     A  limitation is that $LE_{\mathrm{exo}}$ is inferred from eddy-covariance LE, attributing the energy residual to advection (neglecting other imbalance sources) and then spatially interpolated under a diffusion/IDW assumption, making estimates sensitive to tower coverage and interpolation choices.
     
-    Why can't we just adjust $alpha\_{PT}$ upwards? 
-     In arid or semi-arid environments where advection is prevalent, $\alpha\_{PT}$ values as high as 1.4, 1.5, or even 1.55 observed, reflecting the increased evaporative demand caused by the desert-like surroundings. (cite Diaz-Espejo et al., 2005; Li and Yu, 2007).
+    Why can't we just adjust $\alpha_{PT}$ upwards? 
+     In arid or semi-arid environments where advection is prevalent, $\alpha_{PT}$ values as high as 1.4, 1.5, or even 1.55 observed, reflecting the increased evaporative demand caused by the desert-like surroundings. (cite Diaz-Espejo et al., 2005; Li and Yu, 2007).
     This approach used in Sebal-A paper.
-    Doesn't account for spatial patter, leading edge. How are we going to parameterize $\alpha\_{PT}$? More reason to use openET model output. 
+    Doesn't account for spatial patter, leading edge. How are we going to parameterize $\alpha_{PT}$? More reason to use openET model output. 
     
     
     % SEBAL-A (Mkhwanazi et al. 2015)
@@ -1311,7 +1242,7 @@ i.e., $\overline{w'T'}$ is determined from the log-law temperature profile presc
     \centering
     \caption{Selected foundational and applied studies of advection effects on evaporation/ET}
     \renewcommand{\arraystretch}{1.15}
-    \label{tab:advection_edge_links}
+    \label{tab:advection_studies_foundational}
     \begin{tabular}{|p{2.7cm}|p{3.2cm}|p{2.9cm}|p{6.0cm}|}
     \label{tab:advection_studies_brutsaert}\\
     \hline

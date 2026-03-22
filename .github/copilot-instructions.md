@@ -22,6 +22,7 @@ suttons_problem/
 │       ├── integrators.py             ← integrate_T_implicit, integrate_H2O_implicit
 │       ├── numerics.py                ← thomas, thomas_alt, our_central_difference
 │       ├── physics.py                 ← saturation_vapor_pressure, e_sat, vapor_concentration*
+│       ├── constants.py               ← SIGMA_SB, CP_AIR, RHO_AIR, LV, LV_G, RV
 │       ├── stability.py               ← stability()
 │       └── utils.py                   ← padit()
 │   └── sutton_functions.py            ← DEPRECATED shim; do not use in new code
@@ -30,6 +31,7 @@ suttons_problem/
 ├── data/                              ← input data files
 ├── matlab_versions/                   ← reference MATLAB implementations
 ├── tests/
+│   ├── test_advection_params.py
 │   ├── test_numerics.py
 │   └── test_params.py
 ├── CLOSET.FOR                         ← original FORTRAN reference
@@ -40,7 +42,9 @@ suttons_problem/
 
 | Python name | Meaning |
 |---|---|
-| `Params` | Dataclass holding all model parameters (grid, surface, meteorology) |
+| `AdvectionParams` | Extended dataclass: per-patch canopy, energy partition, radiation closure, BCs |
+| `Params` | Legacy dataclass (grid, surface, meteorology); prefer `AdvectionParams` for new code |
+| `SIGMA_SB`, `CP_AIR`, `RHO_AIR`, `LV`, `LV_G`, `RV` | Physical constants (in `constants.py`) |
 | `integrate_T_implicit` | Implicit time-stepping for temperature advection |
 | `integrate_H2O_implicit` | Implicit time-stepping for water vapour advection |
 | `thomas` / `thomas_alt` | Thomas algorithm (tridiagonal solver) |
@@ -59,24 +63,23 @@ Always import from the `sutton` package, not from `sutton_functions.py` (depreca
 
 ```python
 import sys as _sys
-_sys.path.insert(0, "/Users/octaviacrompton/Projects/suttons_problem/src")
+_sys.path.insert(0, "/Users/octaviacrompton/Projects/sutton_advection/src")
 from sutton import (
+    AdvectionParams,
     Params,
-    integrate_T_implicit,
-    integrate_H2O_implicit,
     thomas,
     our_central_difference,
+    no_central_difference,
     saturation_vapor_pressure,
-    e_sat,
-    stability,
-    padit,
+    vapor_concentration_RH,
+    SIGMA_SB, CP_AIR, RHO_AIR, LV, LV_G, RV,
 )
 ```
 
 Or, since the package is installed in editable mode (`pip install -e .`), you can just:
 
 ```python
-from sutton import Params, integrate_T_implicit, integrate_H2O_implicit
+from sutton import AdvectionParams, integrate_T_implicit, integrate_H2O_implicit
 ```
 
 ### Python environment
